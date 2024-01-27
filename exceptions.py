@@ -1,4 +1,10 @@
-class NoAnswerFromEndpointError(Exception):
-    """Исключение вызываемое когда эндпоинт не отвечает."""
+class WrongAnswerFromEndpointError(Exception):
+    """Исключение вызываемое когда ответ от эндпоинта неверный."""
+
+    pass
+
+
+class RequestException(Exception):
+    """Исключение вызываемое при сбое запроса к эндпоинту."""
 
     pass
